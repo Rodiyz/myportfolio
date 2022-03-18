@@ -1,0 +1,77 @@
+.order {
+  background-image: url(../img/percent.svg);
+  background-size: cover;
+  background-position: bottom center;
+  padding: 80px 0;
+  background-color: var(--accent-color);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__left {
+    grid-column: 5 span;
+    padding-left: 60px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    color: var(--light-color);
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--light-color);
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 7 span;
+    padding-right: 60px;
+  }
+
+  &__form {
+    max-width: 500px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__label {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    &__input {
+      border-radius: 5px;
+      width: 100%;
+      height: 64px;
+      padding: 0 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      color: var(--dark-color);
+
+      &::placeholder{
+        color: rgba(40, 41, 68, 0.7);
+      }
+    }
+  }
+
+  &__btn {
+    padding: 18px 30px;
+  }
+}
