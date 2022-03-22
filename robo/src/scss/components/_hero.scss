@@ -9,10 +9,18 @@
 
   &__content {
     max-width: 516px;
+
+    @include high-tablet {
+      max-width: none;
+    }
   }
 
   &__image {
     transform: translate(167px, 4px);
+
+    @include high-tablet {
+      display: none;
+    }
   }
 
   &__title {
@@ -29,5 +37,10 @@
       line-height: 160%;
       color: var(--light-color);
     }
+  }
+
+  @include high-tablet {
+    padding-bottom: 100px;
+    min-height: auto;
   }
 }

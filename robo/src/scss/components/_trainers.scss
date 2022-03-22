@@ -13,6 +13,10 @@
 
   .swiper-slide {
     width: 360px;
+
+    @include small-tablet {
+      width: 220px;
+    }
   }
 
   .swiper-scrollbar-drag {
